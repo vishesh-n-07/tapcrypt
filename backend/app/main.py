@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .routes_access import router as access_router
 from .routes_biometric import router as biometric_router
+from .routes_locks import router as locks_router
 from .routes_pairing import router as pairing_router
 from .routes_settings import router as settings_router
 from .routes_verify import router as verify_router
@@ -21,6 +22,7 @@ app.include_router(access_router)
 app.include_router(verify_router)
 app.include_router(biometric_router)
 app.include_router(settings_router)
+app.include_router(locks_router)
 
 
 @app.get("/health")

@@ -5,3 +5,4 @@ __pycache__/
 node_modules/
 .expo/
 dev-key.json
+tools/dev-locks.json
